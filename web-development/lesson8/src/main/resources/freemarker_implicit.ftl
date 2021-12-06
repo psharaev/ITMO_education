@@ -1,0 +1,6 @@
+[#ftl]
+[#-- @implicitly included --]
+[#-- @ftlvariable name="notices" type="ru.itmo.wp.lesson8.domain.Notice[]" --]
+[#-- @ftlvariable name="users" type="ru.itmo.wp.lesson8.domain.User[]" file="templates/commons.ftlh" --]
+[#-- @ftlvariable name="message" type="java.lang.String" --]
+[#-- @ftlvariable name="user" type="ru.itmo.wp.lesson8.domain.User" --]
