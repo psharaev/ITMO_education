@@ -6,4 +6,4 @@
 
 ## 3 семестр
 
- * [web программирования](web-development)
+ * [web программирование](web-development)
