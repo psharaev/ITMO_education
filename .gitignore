@@ -150,7 +150,7 @@ hs_err_pid*
 
 ### macOS ###
 # General
-
+.DS_Store
 .AppleDouble
 .LSOverride
 
