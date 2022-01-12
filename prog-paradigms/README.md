@@ -1,6 +1,6 @@
 # Парадигмы программирования
 
-Актуальные домашние задания: https://www.kgeorgiy.info/courses/paradigms/homeworks.html#java-binary-search
+Актуальные домашние задания: https://www.kgeorgiy.info/courses/paradigms/homeworks.html
 
 ### Домашнее задание 1. Бинарный поиск
 1. Реализуйте итеративный и рекурсивный варианты бинарного поиска в массиве.
