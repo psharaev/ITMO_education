@@ -1,3 +1,7 @@
+ # Введение в программирование
+ 
+ Актуальные домашние задания: https://www.kgeorgiy.info/courses/prog-intro/homeworks.html
+ 
  ### Домашнее задание 1. Запусти меня!
 
    1. Установите [JDK 11+](https://adoptopenjdk.net/?variant=openjdk14&jvmVariant=hotspot)
