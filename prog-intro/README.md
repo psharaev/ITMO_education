@@ -4,6 +4,8 @@
 
 Актуальные домашние задания: https://www.kgeorgiy.info/courses/prog-intro/homeworks.html
 
+Записи лекций можно найти на канале [kgeorgiy's courses](https://www.youtube.com/c/kgeorgiycourses/videos)
+
 Изученные темы:
 1. Введение
 2. Массивы и ссылки
