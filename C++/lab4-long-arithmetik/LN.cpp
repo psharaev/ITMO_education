@@ -3,7 +3,6 @@
 //region constructors and destructor
 LN::LN(long long num)
 {
-    std::cout << "cons ll: " << num << std::endl;
     initVector();
 
     isNaN_ = false;
@@ -29,7 +28,6 @@ LN operator ""_ln(const char *s)
 
 LN::LN(const char *s)
 {
-    std::cout << "cons char*: " << s << std::endl;
     size_t length = strlen(s);
     initVector(length);
 
@@ -57,7 +55,6 @@ LN::LN(const char *s)
 
 LN::LN(const std::string_view &s)
 {
-    std::cout << "cons str_view: " << s << std::endl;
     size_t length = s.length();
     initVector(length);
 
@@ -85,7 +82,6 @@ LN::LN(const std::string_view &s)
 
 LN::LN(bool b)
 {
-    std::cout << "cons bool: " << b << std::endl;
     initVector(1);
     push_back((digit_t) b);
     isNaN_ = false;
@@ -94,7 +90,6 @@ LN::LN(bool b)
 
 LN::~LN()
 {
-    std::cout << "destr: " << *this << std::endl;
     free(digits_);
 }
 //endregion
@@ -102,7 +97,6 @@ LN::~LN()
 //region copy and move
 LN::LN(const LN &that)
 {
-    std::cout << "cons copy: " << that << std::endl;
     initVector(that.size_);
 
     std::memcpy(digits_, that.digits_, that.size_ * sizeof(digit_t));
@@ -114,10 +108,11 @@ LN::LN(const LN &that)
 
 LN::LN(LN &&that) noexcept
 {
-    std::cout << "cons move: " << that << std::endl;
     digits_ = that.digits_;
     isNegative_ = that.isNegative_;
     isNaN_ = that.isNaN_;
+    size_ = that.size_;
+    capacity_ = that.capacity_;
 
     that.digits_ = nullptr;
     that.size_ = 0;
@@ -126,7 +121,6 @@ LN::LN(LN &&that) noexcept
 
 LN &LN::operator=(const LN &that)
 {
-    std::cout << "oper copy: " << that << std::endl;
     if (this == &that) {
         return *this;
     }
@@ -143,11 +137,12 @@ LN &LN::operator=(const LN &that)
 
 LN &LN::operator=(LN &&that) noexcept
 {
-    std::cout << "oper move: " << that << std::endl;
     free(digits_);
     digits_ = that.digits_;
     isNegative_ = that.isNegative_;
     isNaN_ = that.isNaN_;
+    size_ = that.size_;
+    capacity_ = that.capacity_;
 
     that.digits_ = nullptr;
     that.size_ = 0;

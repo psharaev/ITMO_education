@@ -5,9 +5,6 @@
 #include "LN.h"
 
 void dumpResult(std::ostream &outp, std::stack<LN> &s);
-typedef struct {
-    uint8_t digits[128];
-} uint1024_t;
 
 int main(int argc, char *argv[])
 {
