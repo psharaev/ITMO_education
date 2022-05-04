@@ -4,7 +4,7 @@
 
 Пройти контесты можно по ссылке: https://codeforces.com/group/IcRBR8epox
 
-Записи лекций можно найти на youtube канале [kgeorgiy's courses](https://www.youtube.com/c/kgeorgiycourses/videos)
+Записи лекций можно найти на youtube канале [Pavel Mavrin](https://www.youtube.com/channel/UC9WDkCyUlNTncq1Y-mFSgLQ)
 
 Выполненные лабораторные (<семестр>-<лабораторная>):
 
