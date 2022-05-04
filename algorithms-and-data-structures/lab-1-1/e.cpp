@@ -39,6 +39,11 @@ int main() {
 
     sort(arr.begin(), arr.end());
 
+    /*for (int i = 0; i < n; ++i) {
+        cout << arr[i] << ' ';
+    }
+    cout << endl;*/
+
     int k;
     cin >> k;
 
