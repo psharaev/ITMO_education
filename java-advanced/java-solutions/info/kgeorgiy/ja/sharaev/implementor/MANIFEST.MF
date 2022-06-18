@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: Pavel Sharaev
+Main-Class: info.kgeorgiy.ja.sharaev.implementor.Implementor
+Class-Path: ./../../java-advanced-2022/artifacts/
+ info.kgeorgiy.java.advanced.implementor.jar
