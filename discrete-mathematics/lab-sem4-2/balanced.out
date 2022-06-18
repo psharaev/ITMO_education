@@ -1,0 +1,32 @@
+start: kek
+accept: ac
+reject: rj
+blank: _
+
+kek _ -> ac _ ^
+kek ( -> s ( ^
+kek ) -> s ) ^
+
+s _ -> e 1 <
+s ) -> s ) >
+s ( -> s ( >
+
+e ) -> e ) <
+e ( -> e ( <
+e _ -> o1 0 >
+
+o1 ( -> o1 ( >
+o1 ) -> o2 _ <
+o1 _ -> o1 _ <
+
+o2 ( -> o3 _ >
+o2 ) -> rj ) ^
+o2 _ -> o2 _ <
+
+o3 _ -> o3 _ >
+o3 ) -> o1 ) ^
+o3 ( -> o1 ( ^
+o3 1 -> o4 1 <
+
+o4 _ -> o4 _ <
+o4 0 -> ac 0 ^

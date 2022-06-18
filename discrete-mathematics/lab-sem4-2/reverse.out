@@ -1,0 +1,33 @@
+start: r
+accept: ac
+reject: rj
+blank: _
+
+r 1 -> r t1 >
+r 0 -> r t0 >
+r _ -> b _ <
+
+b t1 -> p1 w1 >
+b t0 -> p0 w0 >
+b w1 -> b w1 <
+b w0 -> b w0 <
+b 0 -> b 0 <
+b 1 -> b 1 <
+b _ -> c _ >
+
+p1 _ -> b 1 <
+p1 0 -> p1 0 >
+p1 1 -> p1 1 >
+p1 w1 -> p1 w1 >
+p1 w0 -> p1 w0 >
+
+p0 _ -> b 0 <
+p0 0 -> p0 0 >
+p0 1 -> p0 1 >
+p0 w1 -> p0 w1 >
+p0 w0 -> p0 w0 >
+
+c w1 -> c _ >
+c w0 -> c _ >
+c 1 -> ac 1 ^
+c 0 -> ac 0 ^
