@@ -8,7 +8,7 @@
 
 ## Выполненные домашние задания:
 
-1. [Обход файлов](java-solutions/info/kgeorgiy/ja/sharaev/walk/Walk.java) — обход файлов и подсчёт хэш сумм
+1. [Обход файлов](java-solutions/info/kgeorgiy/ja/sharaev/walk/Walk.java) — обход файлов и подсчёт хэш сумм при помощи nio
 2. [Множество на массиве](java-solutions/info/kgeorgiy/ja/sharaev/arrayset/ArraySet.java) — реализовать интерфейс
    NavigableSet
 3. [Студенты](java-solutions/info/kgeorgiy/ja/sharaev/student/StudentDB.java) — Java Stream API
