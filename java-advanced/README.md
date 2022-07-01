@@ -6,7 +6,7 @@
 
 Записи лекций можно найти на youtube канале [kgeorgiy's courses](https://www.youtube.com/c/kgeorgiycourses/videos)
 
-## Выполненые домашние задания:
+## Выполненные домашние задания:
 
 1. [Обход файлов](java-solutions/info/kgeorgiy/ja/sharaev/walk/Walk.java) — обход файлов и подсчёт хэш сумм
 2. [Множество на массиве](java-solutions/info/kgeorgiy/ja/sharaev/arrayset/ArraySet.java) — реализовать интерфейс
