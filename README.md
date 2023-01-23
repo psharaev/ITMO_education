@@ -26,3 +26,7 @@
 
 * [Технологии Java](java-advanced) — [репозиторий курса с тестами](java-advanced-tests)
 * [Математическая логика](mathematical-logic)
+
+## 5 семестр
+
+* [функциональное программирование (Haskell)](functional-programming-haskell)
