@@ -1,0 +1,42 @@
+grammar math;
+
+expr () [int val]
+: term() exprS(term0.val) {$val = exprS1.val;}
+;
+
+exprS(int acc) [int val]
+: PLUS term() {$val = acc + term1.val;} exprS($val) {$val = exprS2.val;}
+| MINUS term() {$val = acc - term1.val;} exprS($val) {$val = exprS2.val;}
+| ε {$val = acc;}
+;
+
+term () [int val]
+: factor() termS(factor0.val) {$val = termS1.val;}
+;
+
+termS (int acc) [int val]
+: MUL factor() {$val = acc * factor1.val;} termS($val) {$val = termS2.val;}
+| DIV factor() {$val = acc / factor1.val;} termS($val) {$val = termS2.val;}
+| ε {$val = acc;}
+;
+
+factor () [int val]
+: NUM {$val = Integer.parseInt(NUM0);}
+| OPEN expr() CLOSE {$val = expr1.val;}
+| MINUS unary() {$val = unary1.val;}
+;
+
+unary () [int val]
+: NUM {$val = Integer.parseInt("-" + NUM0);}
+| OPEN expr() CLOSE {$val = -(expr1.val);}
+;
+
+PLUS: "\\+";
+MINUS: "-";
+MUL: "\\*";
+DIV: "/";
+NUM: "(0|[1-9][0-9]*)";
+OPEN: "\\(";
+CLOSE: "\\)";
+
+
