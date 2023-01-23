@@ -29,4 +29,4 @@
 
 ## 5 семестр
 
-* [функциональное программирование (Haskell)](functional-programming-haskell)
+* [Функциональное программирование (Haskell)](functional-programming-haskell)
