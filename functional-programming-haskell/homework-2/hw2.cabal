@@ -1,0 +1,25 @@
+cabal-version:      1.12
+name:               hw2
+version:            0.1.0.0
+description:        HW2 FP
+homepage:           https://github.com/githubuser/HW0#readme
+author:             Sharaev Pavel
+maintainer:         mail@pechhenka.ru
+copyright:          2022 Sharaev Pavel
+license:            MIT
+category:           Web
+license-file:       LICENSE
+build-type:         Simple
+tested-with:        GHC == 8.0.1
+
+library
+  exposed-modules:  HW2.T1
+                    HW2.T2
+                    HW2.T3
+                    HW2.T4
+                    HW2.T5
+                    HW2.T6
+  hs-source-dirs:   src
+  ghc-options:      -Wall
+  build-depends:    base >=4.7 && <5, scientific
+  default-language: Haskell2010

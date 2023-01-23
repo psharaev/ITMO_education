@@ -1,0 +1,26 @@
+cabal-version:      1.12
+name:               hw0
+version:            0.1.0.0
+description:        HW0 FP
+homepage:           https://github.com/githubuser/HW0#readme
+author:             Sharaev Pavel
+maintainer:         mail@pechhenka.ru
+copyright:          2022 Sharaev Pavel
+license:            MIT
+category:           Web
+license-file:       LICENSE
+build-type:         Simple
+tested-with:        GHC == 8.0.1
+
+library
+  exposed-modules:  HW0.T1
+                    HW0.T2
+                    HW0.T3
+                    HW0.T4
+                    HW0.T5
+                    HW0.T6
+  hs-source-dirs:   src
+  ghc-options:      -Wall
+  build-depends:    base >=4.7 && <5
+  default-language: Haskell2010
+
