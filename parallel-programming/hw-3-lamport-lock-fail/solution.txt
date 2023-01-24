@@ -1,0 +1,20 @@
+Шараев Павел
+
+# format: <tid> <line> <action> <location> <value>
+# e.g. thread 0 entering critical section is shown below
+
+# get same tickets 'my'
+0 3 rd label[1] 0
+1 3 rd label[0] 0
+
+# publish first thread ticket
+1 4 wr label[1] 1
+
+# read and enter CS
+1 7 rd label[0] 0
+
+#publsih zero thread ticket
+0 4 wr label[0] 1
+
+# read and enter CS
+0 7 rd label[1] 1
