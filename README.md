@@ -31,4 +31,4 @@
 
 * [Функциональное программирование (Haskell)](functional-programming-haskell)
 * [Методы трансляции (теория компиляторов)](translaton-methods_compiler-theory)
-* [Параллельное программирование](parallel-programming)
+* [Concurrent programming](concurrent-programming)
