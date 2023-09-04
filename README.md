@@ -32,3 +32,7 @@
 * [Функциональное программирование (Haskell)](functional-programming-haskell)
 * [Методы трансляции (теория компиляторов)](translaton-methods_compiler-theory)
 * [Concurrent programming](concurrent-programming)
+
+## 6 семестр
+
+* [Распределенные системы](parallel-distributed-system)
