@@ -1,29 +1,34 @@
 public class Sum {
 
     public static void main(String[] args) {
-
         int sum = 0;
-
         for (final String arg : args) {
-            int startIndex = -1;
-
-            for (int i = 0; i < arg.length(); i++) {
-                if (Character.isWhitespace(arg.charAt(i))) {
-                    if (startIndex != -1) {
-                        sum += Integer.parseInt(arg.substring(startIndex, i));
-                        startIndex = -1;
-                    }
-                } else if (startIndex == -1) {
-                    startIndex = i;
-                }
-
-            }
-
-            if (startIndex != -1) {
-                sum += Integer.parseInt(arg.substring(startIndex));
-            }
+            sum += calcSum(arg);
         }
 
         System.out.println(sum);
+    }
+
+    private static int calcSum(String s) {
+        int res = 0;
+        for (int leftPos = 0; leftPos < s.length(); ) {
+            while (leftPos < s.length() && Character.isWhitespace(s.charAt(leftPos))) {
+                leftPos++;
+            }
+
+            if (leftPos == s.length()) {
+                break;
+            }
+
+            int rightPos = leftPos;
+            while (rightPos < s.length() && !Character.isWhitespace(s.charAt(rightPos))) {
+                rightPos++;
+            }
+
+            res += Integer.parseInt(s.substring(leftPos, rightPos));
+            leftPos = rightPos;
+        }
+
+        return res;
     }
 }
